@@ -1,0 +1,11 @@
+body {
+    background-color: darkseagreen
+}
+
+h1.display-2 {
+    text-shadow: 2px 3px rgb(91, 160, 106);
+}
+
+.card {
+    background-color: rgba(100, 133, 100, 0.25);
+}
