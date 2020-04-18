@@ -11,16 +11,60 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-  <body>
+    <body>
+        <!-- Title section -->
+        <div class="container text-center mt-4">
+            <h1 class="display-2"><strong>Library</strong></h1>
+            <hr>
+        
+        <!-- Book display section -->
+        <button class="addBookBtn btn btn-dark mb-4">Add Book</button>
+        <div class="bookDisplay row">
+            </div>
 
 
+
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content container w-50 bg-light">
+            <span class="close">&times;</span>
+            <form id='bookForm'>
+                <div class="form-group">
+                    <label for="titleForm">Book Title</label>
+                    <input type="text" class="form-control" id="titleForm">
+                </div>
+                <div class="form-group">
+                    <label for="authorForm">Author</label>
+                    <input type="text" class="form-control" id="authorForm">
+                </div>
+                <div class="form-group">
+                    <label for="pagesForm">Pages</label>
+                    <input type="text" class="form-control" id="pagesForm">
+                </div>
+                <div class="form-check">
+                    <select class="mb-4"id="readStatus" name="readStatus">
+                        <option value="Read">Read</option>
+                        <option value="Not Read">Not Read</option>
+                    </select>
+                </div>
+                
+            </form>
+            <button class="btn btn-dark" id="submitBtn">Add Book</button>
+        </div>
+
+        </div>
+
+
+    <script src="main.js"></script>
+    </body>
+</html>
+                    
 
 
     
-      <!-- Title section -->
-    <div class="container text-center mt-4">
-        <h1 class="display-2"><strong>Library</strong></h1>
-        <hr>
         
 
        
@@ -29,20 +73,15 @@
 
 
 
-        <!-- Book display section - each col is a book 'card' -->
-        <button class="btn btn-dark mb-4 addBookBtn" >Add Book</button>
-        <div class="bookDisplay row">
                 
            
         
         
-            </div>
+            
    
 
             
                   
 
       
-   <script src="main.js"></script>
-  </body>
-</html>
+  
